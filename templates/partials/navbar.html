@@ -1,0 +1,40 @@
+{% load static %}
+<div>
+    <a class="navbar-brand" href="{% url 'home' %}">
+      
+      <img src="{% static 'https://placeholder.pics/svg/150x50/888888/EEE/Logo' %}" alt="..." height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" zzaria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="{% url 'about' %}">About Us</a></li>
+            <li><a class="dropdown-item" href="{% url 'blogs' %}">Latest Blog's</a></li>
+            <li>
+              <div class="field">
+              <input type="text" placeholder="Email Address">
+              <label class="btn" href="#">Subscribe</label>
+            </div>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href=#><b>Take the quiz!</b></a></li> 
+            <li>
+              <a class="dropdown-item" href=#><b>Log In</b>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
